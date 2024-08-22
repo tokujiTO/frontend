@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-position: inside;
+  color: white;
+  border: 30px rgb(255, 255, 255);
+}
+strong {
+  color: red;
+}
+#titulo {
+  color: yellow;
+  text-align: center;
+}
+p#descricao {
+  color: black;
+}
+
+#contato {
+  background-color: white;
+}
+
+p.promocao {
+  font-size: 30px;
+  text-align: center;
+  background-color: lightgreen;
+}
+
+.corpo {
+  height: 90vh;
+  width: 700px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.nova {
+  color: white;
+}
+
+.final-pagina#rodape {
+  background-color: lightgray;
+  text-align: center;
+}
+
+.curso,
+.novo-curso {
+  background-color: aliceblue;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.novo-curso {
+  color: red;
+}
+
+.curso,
+.novo-curso,
+#contato {
+  padding: 10px;
+  border: 2px solid lightgray;
+}
+
+/* ------------------------------ */
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.navbar > li {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+  align-content: center;
+  text-align: center;
+  transition-duration: 300ms;
+  background-color: rgba(0, 125, 125, 0.462);
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.subList {
+  position: absolute;
+  top: 100%;
+  left: 18%;
+  width: 50%;
+  list-style-type: none;
+  background-color: rgba(0, 125, 125, 0.462);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+li:hover .subList {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subList > li {
+  border: none;
+  text-align: left;
+  padding: 10px;
+  height: fit-content;
+  font-size: 20px;
+}
+
+.subList > li:hover {
+  text-decoration: underline;
+}
