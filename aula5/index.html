@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .caixa1,
+      .caixa2 {
+        width: 300px;
+        text-align: justify;
+        background-color: #ccc;
+        border: 5px solid black;
+        padding: 50px;
+      }
+      .caixa1 {
+        box-sizing: content-box;
+      }
+      .caixa2 {
+        box-sizing: border-box;
+      }
+      .rodape {
+        background-color: aliceblue;
+        padding: 12px;
+        border: 1px sollid #eee;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <p class="caixa1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
+        molestiae iure provident eos veritatis error vel magni molestias unde
+        assumenda corrupti doloribus nobis aut aperiam ad libero. Repellat,
+        quaerat exercitationem.
+      </p>
+      <p class="caixa2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
+        molestiae iure provident eos veritatis error vel magni molestias unde
+        assumenda corrupti doloribus nobis aut aperiam ad libero. Repellat,
+        quaerat exercitationem.
+      </p>
+      <footer class="rodape">Volte sempre</footer>
+    </article>
+  </body>
+</html>
